@@ -12,7 +12,7 @@ app.use((req, res, next) => {
     console.log(req.path, req.method)
     next()
 })
-
+app.use(express.json())
 // routes
 // app.get('/', (rq, res) => {
 //     res.json({msg:'Welcom to the App'})
